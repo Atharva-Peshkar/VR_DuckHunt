@@ -10,12 +10,12 @@ This VR project reimagines the classic *Duck Hunt* arcade game in a fully immers
 
 | Feature              | Description                                                              | Estimated Challenge |  
 |----------------------|--------------------------------------------------------------------------|----------------------|  
-| **Duck Spawning**     | Ducks appear at random locations, moving at varying speeds and directions. | 3                    |  
-| **Shooting Mechanic** | Allows the player to shoot and register successful hits on targets.       | 3                    |  
-| **Score System**      | Displays score as ducks are hit, offering feedback on player performance. | 2                    |  
-| **VR Restart Mechanic**| Provides an in-game option to easily reset the experience.              | 2                    |  
-| **Audio Feedback**    | Adds sounds for gunshots and duck reactions to enrich the gameplay.       | 1                    |  
-| **Background Environment** | Immersive countryside setting with simple 3D models.                | 2                    |  
+| **Duck Spawning**     | Ducks appear at random locations, moving at varying speeds and directions. | **3** <br> This feature should be manageable, as I have experience creating a similar effect in a previous course assignment.                   |  
+| **Shooting Mechanic** | Allows the player to shoot and register successful hits on targets.       | **3** <br> This feature should be straightforward to implement, as I’ve developed a similar effect in a previous assignment for this course.                   |  
+| **Score System**      | Displays score as ducks are hit, offering feedback on player performance. | **2** <br> This should be simple to implement, as it only involves counting the number of ducks hit.                   |  
+| **VR Restart Mechanic**| Provides an in-game option to easily reset the experience.              | **2** <br> This should be easy to implement, as it simply requires resetting the scene.                   |  
+| **Audio Feedback**    | Adds sounds for gunshots and duck reactions to enrich the gameplay.       | **1** <br> This should be very easy to implement, as I’ve done this for a previous assignment for this course.                   |  
+| **Background Environment** | Immersive countryside setting with simple 3D models.                | **2** <br> This should be easy as long as I can find the right assets.                   |  
 
 ## Milestones
 
