@@ -1,57 +1,53 @@
+// using System.Collections;
+// using System.Collections.Generic;
+// using UnityEngine;
+// using UnityEngine.SceneManagement;
+
+
+// public class CubeEnemy : MonoBehaviour
+// {
+//     public GameObject explosionVFX; 
+//     public float explosionDelay = 0f; 
+
+//     private void OnTriggerEnter(Collider other)
+//     {
+//         if (other.CompareTag("redBulletObj")) 
+//         {
+
+//             Instantiate(explosionVFX, transform.position, Quaternion.identity);
+//             // Debug.Log("Bullet hit the target!");
+//             Destroy(gameObject); // Destroy the target object on bullet hit
+            
+//         }
+//     }
+// }
+
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-
-public class CubeEnemy : MonoBehaviour
+public class DuckCollision : MonoBehaviour
 {
-    public GameObject explosionVFX; 
-    public float explosionDelay = 0f; 
+    public System.Action OnDuckHit; // Delegate for score update
+    public System.Action OnDuckDestroyed; // Delegate to track destruction
+    public GameObject explosionVFX; // Optional explosion effect
 
     private void OnTriggerEnter(Collider other)
     {
-        // // Check if the collided object is the player
-        // if (other.CompareTag("MainCamera")) 
-        // {
-
-        //     ActivateExplosion();
-            
-        // }
-
-        if (other.CompareTag("redBulletObj")) 
+        if (other.CompareTag("redBulletObj")) // Check if a bullet hits the duck
         {
+            if (explosionVFX != null)
+            {
+                Instantiate(explosionVFX, transform.position, Quaternion.identity);
+            }
 
-            Instantiate(explosionVFX, transform.position, Quaternion.identity);
-            // Debug.Log("Bullet hit the target!");
-            Destroy(gameObject); // Destroy the target object on bullet hit
-            
+            Destroy(other.gameObject); // Destroy the bullet
+            Destroy(gameObject); // Destroy the duck
+
+            OnDuckHit?.Invoke(); // Update the score
+            OnDuckDestroyed?.Invoke(); // Notify spawner of duck destruction
         }
     }
-
-    // private void ActivateExplosion()
-    // {
-    //     // Instantiate the explosion VFX at the enemy's position
-    //     Instantiate(explosionVFX, transform.position, Quaternion.identity);
-        
-    //     // Destroy the enemy instance
-    //     Destroy(gameObject);
-
-    //     SceneManager.LoadScene("Scenes/GameOver");
-    // }
-
-
-    // private void DestroyExplosion()
-    // {
-    //     // Instantiate the explosion VFX at the enemy's position
-    //     Instantiate(explosionVFX, transform.position, Quaternion.identity);
-        
-    //     // Destroy the enemy instance
-    //     Destroy(gameObject);
-    // }
-    
-    // private void FreezeGame()
-    // {
-    //     Time.timeScale = 0f; // Freeze the game
-    // }
 }

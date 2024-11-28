@@ -2577,7 +2577,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   explosionVFX: {fileID: 7819775807870019735, guid: f916833a9285b1244b9a2a6ef531b2a5, type: 3}
-  explosionDelay: 0
 --- !u!65 &655349405
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2629,7 +2628,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   duckPrefab: {fileID: 655349397}
-  duckCount: 10
+  duckCount: 15
   duckSpeed: 3
   spawnDelay: 2
 --- !u!4 &681395952
@@ -7111,7 +7110,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5261318582229891217, guid: b52849f74c5d3434c900a069af1b063c, type: 3}
       propertyPath: m_CollisionDetection
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 5261318582229891217, guid: b52849f74c5d3434c900a069af1b063c, type: 3}
       propertyPath: m_ExcludeLayers.m_Bits
