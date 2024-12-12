@@ -1,3 +1,5 @@
 # VR_DuckHunt
 
 For the final project, Duck Hunt VR successfully reimagines the classic arcade game in a fully immersive virtual reality environment. Set in a charming countryside backdrop, players engage with intuitive shooting mechanics to hit flying ducks that spawn at random locations, adding excitement and challenge to the experience. The project features a dynamic scoring system, real-time audio feedback for gunshots, and an easy-to-use VR restart mechanic, all of which contribute to a seamless and enjoyable gameplay experience. The game also incorporates basic 3D models for the environment, enhancing the immersive atmosphere. The project was completed in two phases: the first focused on creating the background, implementing duck spawning and movement, and establishing basic shooting functionality, while the second phase refined the scoring, audio, and reset mechanics. Overall, Duck Hunt VR combines nostalgic gameplay with modern VR technology, offering a fun and engaging experience for players at the XR Arcade showcase.
+
+Demo video - https://youtube.com/shorts/ziFv6t2968Q
