@@ -8,7 +8,6 @@ public class GameReset : MonoBehaviour
 {
     public InputActionReference triggerLeft;
 
-    // Update is called once per frame
     void Update()
     {
         float leftTriggerHeld = triggerLeft.action.ReadValue<float>();

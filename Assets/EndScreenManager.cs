@@ -3,7 +3,7 @@ using TMPro;
 
 public class EndScreenManager : MonoBehaviour
 {
-    public TextMeshPro finalScoreText; // Reference to the TextMeshPro object for final score
+    public TextMeshPro finalScoreText;
 
     void Start()
     {

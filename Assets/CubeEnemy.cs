@@ -1,28 +1,3 @@
-// using System.Collections;
-// using System.Collections.Generic;
-// using UnityEngine;
-// using UnityEngine.SceneManagement;
-
-
-// public class CubeEnemy : MonoBehaviour
-// {
-//     public GameObject explosionVFX; 
-//     public float explosionDelay = 0f; 
-
-//     private void OnTriggerEnter(Collider other)
-//     {
-//         if (other.CompareTag("redBulletObj")) 
-//         {
-
-//             Instantiate(explosionVFX, transform.position, Quaternion.identity);
-//             // Debug.Log("Bullet hit the target!");
-//             Destroy(gameObject); // Destroy the target object on bullet hit
-            
-//         }
-//     }
-// }
-
-
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -30,9 +5,9 @@ using UnityEngine.SceneManagement;
 
 public class DuckCollision : MonoBehaviour
 {
-    public System.Action OnDuckHit; // Delegate for score update
-    public System.Action OnDuckDestroyed; // Delegate to track destruction
-    public GameObject explosionVFX; // Optional explosion effect
+    public System.Action OnDuckHit; 
+    public System.Action OnDuckDestroyed; 
+    public GameObject explosionVFX;
 
     private void OnTriggerEnter(Collider other)
     {
@@ -43,7 +18,7 @@ public class DuckCollision : MonoBehaviour
                 Instantiate(explosionVFX, transform.position, Quaternion.identity);
             }
 
-            Destroy(other.gameObject); // Destroy the bullet
+            Destroy(other.gameObject); 
             Destroy(gameObject); // Destroy the duck
 
             OnDuckHit?.Invoke(); // Update the score
